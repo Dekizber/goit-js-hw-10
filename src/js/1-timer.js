@@ -63,6 +63,7 @@ startButton.addEventListener('click', startCountdown);
 function startCountdown() {
     startButton.disabled = true;
     datetimePicker.disabled = true;
+    startButton.classList.remove('active-btn');
 
     countdownInterval = setInterval(() => {
         const currentTime = new Date();
